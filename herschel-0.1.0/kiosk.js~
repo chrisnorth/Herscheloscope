@@ -1,0 +1,146 @@
+//$(document).ready(function () {
+function setupKiosk(){    
+    $('#kiosk').disableTextSelect();
+        
+    $('#kiosk #minmax').click(function(){
+        if($(this).hasClass("max")){
+            //minimize
+            $(this).removeClass("max").addClass("min");
+            $('#kiosk').animate({
+                left:'-180px',
+                opacity: 0.6
+                })
+        }else if($(this).hasClass("min")){
+            //maximize
+            $(this).removeClass("min").addClass("max");
+            $('#kiosk').animate({
+                left:'-15px',
+                opacity: 1
+            })
+        }
+    });
+
+    $('#kiosk #menu-title').click(function(){
+        if($('#kiosk #minmax').hasClass("max")){
+	    //minimize
+	    $('#kiosk #minmax').removeClass("max").addClass("min");
+	    $('#kiosk').animate({
+                left:'-180px',
+                opacity: 0.6
+            })
+        }else if($('#kiosk #minmax').hasClass("min")){
+	    //maximize
+	    $('#kiosk #minmax').removeClass("min").addClass("max");
+	    $('#kiosk').animate({
+                left:'-15px',
+                opacity: 1
+	    })
+        }
+    });
+    
+    //show constellations...
+    $('#kiosk #options .option-const').click(function(){
+	//alert('hello');
+        chromo.simulateKeyPress('l');
+        if($('#kiosk #options .option-const #on-off').hasClass("off")){
+            $('#kiosk #options .option-const #on-off').removeClass("off").addClass("on");
+        }else if($('#kiosk #options .option-const #on-off').hasClass("on")){
+             $('#kiosk #options .option-const #on-off').removeClass("on").addClass("off");
+        }
+    });
+
+    //turn off planck labels
+    togglePlanck();
+
+    $('#kiosk #options .option-labels').click(function(){
+	//togglePlanck();
+    });
+
+    $('#kiosk #options .option-coord').click(function(){
+	if($('#kiosk #options .option-coord #on-off').hasClass("gal")){
+	    $('#kiosk #options .option-coord #on-off').removeClass("gal").addClass("eq");
+	    $('#kiosk #options .option-coord .label').html("Equatorial");
+	    console.log('clicked coord')
+	    console.log($('#kiosk #options .option-coord .label').html())
+	    chromo.switchCoordinateSystem('A')
+	}else if($('#kiosk #options .option-coord #on-off').hasClass("eq")){
+	    $('#kiosk #options .option-coord #on-off').removeClass("eq").addClass("gal");
+	    $('#kiosk #options .option-coord .label').html("Galactic");
+	    chromo.switchCoordinateSystem('G')
+	}
+    });
+
+    function togglePlanck(){
+	//alert('hello');
+        chromo.simulateKeyPress('p');
+        if($('#kiosk #options .option-labels #on-off').hasClass("off")){
+	    $('#kiosk #options .option-labels #on-off').removeClass("off").addClass("on");
+        }else if($('#kiosk #options .option-labels #on-off').hasClass("on")){
+	    $('#kiosk #options .option-labels #on-off').removeClass("on").addClass("off");
+        }
+    };
+
+    //load KML file...
+    $('#kiosk #options .option-kml').click(function(){
+	toggleResults();
+    });
+    
+    function toggleResults(){
+        if($('#kiosk #options .option-kml #on-off').hasClass('off')){
+	    kmlUrl='kml_files/results.kml';
+	    removePins();
+	    chromo.readKML(kmlUrl);
+	    $('#kiosk #options .option-kml #on-off').removeClass("off").addClass("on");
+        }else if($('#kiosk #options .option-kml #on-off').hasClass('on')){
+	    kmlUrl='';
+	    removePins();
+	    chromo.readKML(kmlUrl);
+	    $('#kiosk #options .option-kml #on-off').removeClass("on").addClass("off");
+        }
+    }
+    
+    chromo.registerKey('r',function(){
+	//alert('r')
+	toggleResults();
+    },'toggle Planck results')
+
+    chromo.registerKey('p',function(){
+	//alert('r')
+    },'toggle Planck labels')
+    chromo.registerKey('l',function(){
+	//alert('r')
+    },'toggle Constellation labels')
+
+
+    //Quit Chromoscope
+    $('#kiosk #options .option-quit').click(function(){
+        window.location = "../slideshow/herschel.html";
+    });
+    
+    //remove pins from Chromo.
+    function removePins(){
+        //for(var i = 0; i <= chromo.pins.length;i++){
+        //    chromo.removePin(i);
+        //}
+        //$('#body-holder-kml').remove();
+	$('.pinholder').html("");
+	chromo.kmls=[];
+	chromo.pins=[];
+    }
+    
+    $(".pin").live('click',function(){
+	$(".moreinfo").fancybox({
+		'width'			: 1000,
+		'height'		: 600,
+		'autoScale'		: false,
+       		'transitionIn'		: 'fade',
+       		'transitionOut'		: 'fade',
+       		'type'			: 'iframe',
+		'autoDimensions'	: 'false'	
+       	});
+	//$("#moreinfo").trigger('click');
+	return false;
+    });
+    
+//});
+}

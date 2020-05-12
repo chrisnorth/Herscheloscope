@@ -1,0 +1,1415 @@
+<kml xmlns='http://www.opengis.net/kml/2.2' hint='target=sky'>
+<Document>
+<name>Herschel</name>
+ <Style id='default'>
+	<IconStyle>
+	<Icon>
+	<href>pin_default.png</href>
+	</Icon>
+	</IconStyle>
+	<LabelStyle>
+	<color>00ffffff</color>
+	</LabelStyle>
+ </Style>
+ <Style id='solar-system'>
+	<IconStyle>
+	<Icon>
+	<href>pin_ss.png</href>
+	</Icon>
+	</IconStyle>
+	<LabelStyle>
+	<color>00ffffff</color>
+	</LabelStyle>
+ </Style>
+ <Style id='galactic'>
+	<IconStyle>
+	<Icon>
+	<href>pin_galactic.png</href>
+	</Icon>
+	</IconStyle>
+	<LabelStyle>
+	<color>00ffffff</color>
+	</LabelStyle>
+ </Style>
+ <Style id='extra-galactic'>
+	<IconStyle>
+	<Icon>
+	<href>pin_extraGalactic.png</href>
+	</Icon>
+	</IconStyle>
+	<LabelStyle>
+	<color>00ffffff</color>
+	</LabelStyle>
+ </Style>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Orion_A_large.jpg" alt="Orion_A_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>A Herschel study of young stars in the Orion Nebula may have helped solved one of the mysteries around our own Sun's past<br/><a href="https://herscheltelescope.org.uk/results/protostars-orion">Read Full Article...</a></p><b>Key Programme: </b>CHESS (Chemical Herschel Surveys of Star forming regions)<br/><b>Coordinates: </b><br/>Right Ascension: 5h 35m 27s ; Declination: −5° 9′ 55]]></description>
+     <LookAt>
+       <longitude>-96.1375</longitude>
+       <latitude>-5.165</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-96.1375,-5.165,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Planck_clump1_HFI-SPIRE_large.png" alt="Planck_clump1_HFI-SPIRE_small.png" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>By combining up with Planck, Herschel has helped identify clusters of galaxies more distant than seen before<br/><a href="https://herscheltelescope.org.uk/results/galaxy-clusters-planck">Read Full Article...</a></p><b>Key Programme: </b>HerMES<br/><b>Coordinates: </b><br/>Right Ascension: 14h 34m 18s ; Declination: 35° 33′ 32″]]></description>
+     <LookAt>
+       <longitude>38.5786</longitude>
+       <latitude>35.559</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>38.5786,35.559,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Ceres_artist_large.jpg" alt="Ceres_artist_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has made the first definive detection of water vapour on the dwarf planet Ceres, the largest object in the asteroid belt<br/><a href="https://herscheltelescope.org.uk/results/ceres">Read Full Article...</a></p><b>Key Programme: </b>Herschel in-Situ Asteroid and Comet Observation Programme (MACH-11)<br/><b>Coordinates: </b><br/>Right Ascension: 14h 00m 00s ; Declination: -0° 10′ 3″ (on 22 Jan 2014)]]></description>
+     <LookAt>
+       <longitude>30</longitude>
+       <latitude>-0.1676</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#solar-system</styleUrl>
+     <Point>
+       <coordinates>30,-0.1676,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/fomalhaut_artist-impression_large.jpg" alt="fomalhaut_artist-impression_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has discovered a ring of comets around the smallest star in the Fomalhaut system, providing clues about the history of the triple star system<br/><a href="https://herscheltelescope.org.uk/results/fomalhaut-c">Read Full Article...</a></p><b>Key Programme: </b>DEBRIS<br/><b>Coordinates: </b><br/>]]></description>
+     <LookAt>
+       <longitude>162.01863</longitude>
+       <latitude>-24.36887</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>162.01863,-24.36887,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Herschel_and_Hubble_Crab_Nebula_composite.jpg" alt="Herschel_and_Hubble_Crab_Nebula_composite_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Astronomers using Herschel have discovered argon hydride in the Crab Nebula, the first discovery in space of a molecule including a noble gas<br/><a href="https://herscheltelescope.org.uk/results/argon-crab-nebula">Read Full Article...</a></p><b>Key Programme: </b>Mass Loss from Evolved StarS<br/><b>Coordinates: </b><br/>Right Ascension: 5h 34m 30s ; Declination: 22° 00′ 57″]]></description>
+     <LookAt>
+       <longitude>-97.375</longitude>
+       <latitude>22.016</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-97.375,22.016,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Herschel_SPT-B-modes_large.png" alt="Herschel_SPT-B-modes_small.png" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has helped find elusive signals from the early Universe<br/><a href="https://herscheltelescope.org.uk/results/first-b-mode-detection">Read Full Article...</a></p><b>Key Programme: </b><br/><b>Coordinates: </b><br/>Right Ascension: 23h 30m ; Declination: -55° 0′]]></description>
+     <LookAt>
+       <longitude>172.5</longitude>
+       <latitude>-55</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>172.5,-55,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/SDC335_large_v2.jpg" alt="SDC335_small_v2.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has helped astronomers spot the birth of one of the largest stars in our galaxy<br/><a href="https://herscheltelescope.org.uk/results/spitzer-dark-cloud-335">Read Full Article...</a></p><b>Key Programme: </b>Hi-GAL<br/><b>Coordinates: </b><br/>Right Ascension: 16h 30m 52s ; Declination:  -48° 43′ 25″]]></description>
+     <LookAt>
+       <longitude>67.71858309</longitude>
+       <latitude>-48.72350951 </latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>67.71858309,-48.72350951 ,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/SN1987A_SPIRE-Spitzer.jpg" alt="SN1987A_SPIRE-Spitzer-small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel measurements of Supernova 1987a have detected large amounts of cosmic dust, adding weight to the theory that dust is formed in these cosmic fireworks.<br/><a href="https://herscheltelescope.org.uk/results/supernova-1987a">Read Full Article...</a></p><b>Key Programme: </b>MESS<br/><b>Coordinates: </b><br/>Right Ascension: 5h 35m 28s ; Declination: -69° 16′ 12″]]></description>
+     <LookAt>
+       <longitude>-96.1333</longitude>
+       <latitude>-69.27</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-96.1333,-69.27,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/HXMM01_HST-Keck-SMA-JVLA_large.jpg" alt="HXMM01_HST-Keck-SMA-JVLA_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has spotted a massive galaxy in the process of forming, providing astronomers with a key missing link in the formation of the most massive galaxies we see around us today.<br/><a href="https://herscheltelescope.org.uk/results/merging-galaxy-hxmm01">Read Full Article...</a></p><b>Key Programme: </b>HerMES<br/><b>Coordinates: </b><br/>Right Ascension: 02h 20m 16.5s ; Declination:  −06° 01' 43"]]></description>
+     <LookAt>
+       <longitude>-144.39125</longitude>
+       <latitude>-6.02861</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-144.39125,-6.02861,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/vla_spire_galcen_large.png" alt="vla_spire_galcen_small.png" title="" class="imagecache imagecache-results_slider_thumb"/></class><br/><a href="https://herscheltelescope.org.uk/results/sagittarius-a-star">Read Full Article...</a></p><b>Key Programme: </b>SPECHIS and PRISMAS<br/><b>Coordinates: </b><br/>Right Ascension: 17h 45m 40s ; Declination: −29° 0′ 28″]]></description>
+     <LookAt>
+       <longitude>86.41667</longitude>
+       <latitude>-29.00078</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>86.41667,-29.00078,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Compo_HorseHead_04_BIS_Herschel.jpg" alt="Compo_HorseHead_04_BIS_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has produced a brand new view of the region around one of the most iconic objects in the night sky: the Horsehead Nebula<br/><a href="https://herscheltelescope.org.uk/results/horsehead-nebula">Read Full Article...</a></p><b>Key Programme: </b>Gould Belt Survey<br/><b>Coordinates: </b><br/>Right Ascension: 05h 41m ; Declination:  −02° 27′]]></description>
+     <LookAt>
+       <longitude>-94.75</longitude>
+       <latitude>-2.45</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-94.75,-2.45,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/HFLS3_Herschel_noRGB.jpg" alt="HFLS3_Herschel_noRGB_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Astronomers using Herschel have found a distant galaxy that challenges our understanding of galaxy evolution<br/><a href="https://herscheltelescope.org.uk/results/hfls3">Read Full Article...</a></p><b>Key Programme: </b>HerMES<br/><b>Coordinates: </b><br/>Right Ascension: 17h 06m 48s ; Declination:  58° 46′ 23″]]></description>
+     <LookAt>
+       <longitude>76.7</longitude>
+       <latitude>58.773056</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>76.7,58.773056,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/kCrB_large.jpg" alt="kCrB_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has seen a dusty disk around an aging subgiant star, which defies expectations<br/><a href="https://herscheltelescope.org.uk/results/kappa-coronae-borealis">Read Full Article...</a></p><b>Key Programme: </b>DEBRIS<br/><b>Coordinates: </b><br/>Right Ascension: 15h 51m 14s ; Declination:  35° 39′ 27″]]></description>
+     <LookAt>
+       <longitude>57.808</longitude>
+       <latitude>53.6575</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>57.808,53.6575,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/W3_Herschel_large.jpg" alt="W3_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has uncovered clues as to how massive stars are born<br/><a href="https://herscheltelescope.org.uk/results/w3-star-forming-region">Read Full Article...</a></p><b>Key Programme: </b>HOBYS<br/><b>Coordinates: </b><br/>Right Ascension: 2h 53m ; Declination:  61° 38′]]></description>
+     <LookAt>
+       <longitude>-136.75</longitude>
+       <latitude>61.6333</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-136.75,61.6333,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Betelgeuse_Herschel_large.jpg" alt="Betelgeuse_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has shown that Betelgeuse, the red supergiant star on the shoulder of Orion, is heading towards a wall of gas and dust, which it will collide with in a few thousand years.<br/><a href="https://herscheltelescope.org.uk/results/betelgeuse">Read Full Article...</a></p><b>Key Programme: </b>Mass Loss from Evolved Stars<br/><b>Coordinates: </b><br/>Right Ascension: 5h 55m 10s ; Declination:  7° 24′ 25″]]></description>
+     <LookAt>
+       <longitude>-91.208334</longitude>
+       <latitude>7.4069444</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-91.208334,7.4069444,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Apophis_Hershel_3col_large.jpg" alt="Apophis_Hershel_3col_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel observed the asteroid Apophis as it passed by Earth in January 2013<br/><a href="https://herscheltelescope.org.uk/results/apophis">Read Full Article...</a></p><b>Key Programme: </b>MACH-11<br/><b>Coordinates: </b><br/>]]></description>
+     <LookAt>
+       <longitude>-36</longitude>
+       <latitude>-26.13</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#solar-system</styleUrl>
+     <Point>
+       <coordinates>-36,-26.13,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Taurus_L1544_Herschel_max.jpg" alt="Taurus_L1544_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has discovered enough water vapour to fill Earth’s oceans more than 2000 times over, within a gas and dust cloud that is on the verge of collapsing into a new Sun-like star.<br/><a href="https://herscheltelescope.org.uk/results/lynds-1544">Read Full Article...</a></p><b>Key Programme: </b>WISH<br/><b>Coordinates: </b><br/>Right Ascension: 4h 41m ; Declination:  +25° 52′]]></description>
+     <LookAt>
+       <longitude>-109.75</longitude>
+       <latitude>25.866667</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-109.75,25.866667,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Crab_Herschel-rgb_large.jpg" alt="Crab_Herschel-rgb_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has taken a stunning image of the Crab Nebula, the remains of a star that exploded a millenium ago, providing further proof that cosmic dust is created when massive stars die.<br/><a href="https://herscheltelescope.org.uk/results/crab-nebula">Read Full Article...</a></p><b>Key Programme: </b>Mass Loss from Evolved StarS<br/><b>Coordinates: </b><br/>Right Ascension: 5h 34m 30s ; Declination:  22° 00′ 57″]]></description>
+     <LookAt>
+       <longitude>-96.375</longitude>
+       <latitude>22.075</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-96.375,22.075,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/COSMOS_Herschel-rgb.jpg" alt="COSMOS_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has identified galaxies forming stars at incredibly rapid rates, which have then been studied in greater detail using gound-based optical telescopes<br/><a href="https://herscheltelescope.org.uk/results/cosmos-field">Read Full Article...</a></p><b>Key Programme: </b>HerMES<br/><b>Coordinates: </b><br/>Right Ascension: 10h 00m ; Declination:  +22° 12′]]></description>
+     <LookAt>
+       <longitude>-30</longitude>
+       <latitude>22.2</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-30,22.2,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/61Virginis_Herschel_large.jpg" alt="61Virginis_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has discovered a debris disc around the sun-like star 61 Virginis, which is also known to be orbited by 2 relatively small planets.<br/><a href="https://herscheltelescope.org.uk/results/61-virginis">Read Full Article...</a></p><b>Key Programme: </b>DEBRIS<br/><b>Coordinates: </b><br/>Right Ascension: 13h 18m 24s ; Declination:  -18° 18′ 40″]]></description>
+     <LookAt>
+       <longitude>19.6</longitude>
+       <latitude>-18.3111</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>19.6,-18.3111,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Gliese581_Herschel_large.jpg" alt="Gliese581_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has discovered a debris disc around the low-mass star Gleise 581, which is also known to be orbited by 4 relatively small planets.<br/><a href="https://herscheltelescope.org.uk/results/gliese-581">Read Full Article...</a></p><b>Key Programme: </b>DEBRIS<br/><b>Coordinates: </b><br/>Right Ascension: 15h 19m 27s ; Declination:  -7° 43′ 20″]]></description>
+     <LookAt>
+       <longitude>49.8625</longitude>
+       <latitude>-7.22222</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>49.8625,-7.22222,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/w44_Herschel_XMM_large.jpg" alt="w44_Herschel_XMM_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has teamed up with ESA's XMM-Newton x-ray satellite to take a stunning image of a supernova remnant interacting with surrounding gas and dust.<br/><a href="https://herscheltelescope.org.uk/results/supernova-remnant-w44">Read Full Article...</a></p><b>Key Programme: </b>HOBYS<br/><b>Coordinates: </b><br/>Right Ascension: 18h 56m 10s ; Declination:  1° 18′ 58″]]></description>
+     <LookAt>
+       <longitude>104.01667</longitude>
+       <latitude>1.316111</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>104.01667,1.316111,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/DR21_zoom_large.jpg" alt="DR21_zoom_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>A massive filamentary ridge of gas and dust located where massive stars are currently forming.<br/><a href="https://herscheltelescope.org.uk/results/dr21-ridge">Read Full Article...</a></p><b>Key Programme: </b>HOBYS<br/><b>Coordinates: </b><br/>Right Ascension: 20h 33m 12s ; Declination:  +41° 10′]]></description>
+     <LookAt>
+       <longitude>128.3</longitude>
+       <latitude>41.16667</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>128.3,41.16667,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Carina_Herschel_large.jpg" alt="Carina_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Giant bubbles, towering pillars and cascading clouds of dust and gas fill the star-forming nursery of the Carina Nebula seen here in a stunning view from Herschel.<br/><a href="https://herscheltelescope.org.uk/results/carina-nebula">Read Full Article...</a></p><b>Key Programme: </b>Under pressure: Revealing the thermal and spatial structure of strongly irradiated clouds in the Carina Nebula, the nearest laboratory of massive star feedback<br/><b>Coordinates: </b><br/>Right Ascension: 10h 45m 4s ; Declination:  −59° 41′ 4″]]></description>
+     <LookAt>
+       <longitude>-18.733333</longitude>
+       <latitude>-59.68884</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-18.733333,-59.68884,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Herschel_CygnusX_large.jpg" alt="Herschel_CygnusX_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>An incredible image of the Cygnus-X star nursery shows where the next generation of massive stars are forming.<br/><a href="https://herscheltelescope.org.uk/results/cygnus-x">Read Full Article...</a></p><b>Key Programme: </b>HOBYS<br/><b>Coordinates: </b><br/>Right Ascension: 20h 33m ; Declination: 41° 19′]]></description>
+     <LookAt>
+       <longitude>128.25</longitude>
+       <latitude>41.316667</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>128.25,41.316667,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Herschel_Chandra_CDFN_large.jpg" alt="Herschel_Chandra_CDFN_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>A comparison of data from Herschel and Chandra X-ray satellite has shown that massive black holes in the centres of early galaxies influenced the number of stars that formed<br/><a href="https://herscheltelescope.org.uk/results/chandra-deep-field-north">Read Full Article...</a></p><b>Key Programme: </b>HerMES<br/><b>Coordinates: </b><br/>Right Ascension: 12h 37m ; Declination: 62° 16′]]></description>
+     <LookAt>
+       <longitude>9</longitude>
+       <latitude>62</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>9,62,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/HerMES_Bootes_large.jpg" alt="HerMES_Bootes_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>A seemingly empty area of sky in the constellation of Boötes, in which Herschel find thousands of galaxies.<br/><a href="https://herscheltelescope.org.uk/results/bootes-field">Read Full Article...</a></p><b>Key Programme: </b>HerMES<br/><b>Coordinates: </b><br/>Right Ascension: 14h 32m ; Declination: 33° 34′]]></description>
+     <LookAt>
+       <longitude>68</longitude>
+       <latitude>33.566666666</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>68,33.566666666,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Fomalhaut_Herschel_large.jpg" alt="Fomalhaut_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel observations have shown that the dusty ring around the star Fomalhaut is created by the collision of thousands of comets every day.<br/><a href="https://herscheltelescope.org.uk/results/fomalhaut">Read Full Article...</a></p><b>Key Programme: </b>DEBRIS<br/><b>Coordinates: </b><br/>Right Ascension: 22h 57m 39s ; Declination: -29° 37′ 20"]]></description>
+     <LookAt>
+       <longitude>164.4125</longitude>
+       <latitude>-29.622222</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>164.4125,-29.622222,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/CenA_Herschel_XMM_large.jpg" alt="CenA_Herschel_XMM_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Centaurus A is an elliptical galaxy with jets spewing from a central black hole. Together, Herschel and XMM-Newton can help unravel its secrets<br/><a href="https://herscheltelescope.org.uk/results/centaurus">Read Full Article...</a></p><b>Key Programme: </b>Very Nearby Galaxies Survey<br/><b>Coordinates: </b><br/>Right Ascension: 13h 25m 28s ; Declination: -43° 01′ 09"]]></description>
+     <LookAt>
+       <longitude>21.36666</longitude>
+       <latitude>-43.0191</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>21.36666,-43.0191,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Orion_Herschel_Spitzer_large.jpg" alt="Orion_Herschel_Spitzer_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has combined forces with Spitzer to show warm and cold dust in the Orion Nebula<br/><a href="https://herscheltelescope.org.uk/results/orion-nebula">Read Full Article...</a></p><b>Key Programme: </b>HYSOVARS<br/><b>Coordinates: </b><br/>Right Ascension: 5h 35m ; Declination: -5° 23′]]></description>
+     <LookAt>
+       <longitude>-96.25</longitude>
+       <latitude>-5.38333333</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-96.25,-5.38333333,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/M16_HERSCHEL_large.jpg" alt="M16_HERSCHEL_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has captured a view of star formation in and around the iconic "Pillars of Creation"<br/><a href="https://herscheltelescope.org.uk/results/eagle-nebula">Read Full Article...</a></p><b>Key Programme: </b>HOBYS<br/><b>Coordinates: </b><br/>Right Ascension: 18h 28m 48s ; Declination: -13° 49′]]></description>
+     <LookAt>
+       <longitude>97.2</longitude>
+       <latitude>13.816667</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>97.2,13.816667,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/SMC_Herschel_Spitzer_large.jpg" alt="SMC_Herschel_Spitzer_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The Small Magellanic Cloud, a satellite galaxy of our own Milky Way, has been mapped by the Herschel and Spitzer infrared space telescopes<br/><a href="https://herscheltelescope.org.uk/results/small-magellanic-cloud">Read Full Article...</a></p><b>Key Programme: </b>HERITAGE<br/><b>Coordinates: </b><br/>Right Ascension: 0h 53m ; Declination: -72° 50′]]></description>
+     <LookAt>
+       <longitude>-166.75</longitude>
+       <latitude>-72.83333</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-166.75,-72.83333,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/LMC_Herschel_Spitzer_large.jpg" alt="LMC_Herschel_Spitzer_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The Large Magellanic Cloud, a satellte galaxy of our own Milky Way, has been mapped by the Herschel and Spitzer infrared space telescopes<br/><a href="https://herscheltelescope.org.uk/results/large-magellanic-cloud">Read Full Article...</a></p><b>Key Programme: </b>HERITAGE<br/><b>Coordinates: </b><br/>Right Ascension: 5h 23m ; Declination: -69° 45′]]></description>
+     <LookAt>
+       <longitude>-99.25</longitude>
+       <latitude>-69.75</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-99.25,-69.75,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/TWHydrae_artist-impression_large.jpg" alt="TWHydrae_artist-impression_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>HIFI has detected the presence of much cold water vapour around a young star, shedding light on the role of water in the formation of planets.<br/><a href="https://herscheltelescope.org.uk/results/tw-hydrae">Read Full Article...</a></p><b>Key Programme: </b>WISH<br/><b>Coordinates: </b><br/>Right Ascension: 11h 01m 52s ; Declination: -34° 42′ 17″]]></description>
+     <LookAt>
+       <longitude>-14.5334</longitude>
+       <latitude>-34.7047</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-14.5334,-34.7047,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Herschel_Comet103P_hi.jpg" alt="Herschel_Comet103P_lo.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel measurements of Comet Hartley 2 have added to evidence that comets could have been the source of the Earth's water<br/><a href="https://herscheltelescope.org.uk/results/comet-hartley-2-and-oceans-earth">Read Full Article...</a></p><b>Key Programme: </b>HSSO<br/><b>Coordinates: </b><br/>]]></description>
+     <LookAt>
+       <longitude>-90</longitude>
+       <latitude>30.5</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#solar-system</styleUrl>
+     <Point>
+       <coordinates>-90,30.5,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/HiGal_L310-319_large.jpg" alt="HiGal_L310-319_medium.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>A swathe of the Galactic Plane as seen by Herschel, making up part of the Galactic Plane Survey<br/><a href="https://herscheltelescope.org.uk/results/galactic-plane-centaurus">Read Full Article...</a></p><b>Key Programme: </b>Hi-Gal<br/><b>Coordinates: </b><br/>Right Ascension: 14h 28m 54s ; Declination: -61° 38′ 41″]]></description>
+     <LookAt>
+       <longitude>37.225</longitude>
+       <latitude>-61.6447</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>37.225,-61.6447,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/CWLeo_PACS_VLT_large.png" alt="CWLeo_PACS_VLT_small.png" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Dusty rings have been seen around the massive star CW Leonis, suggesting that the star has been shedding its outer layers for thousands of years<br/><a href="https://herscheltelescope.org.uk/results/dust-rings-around-cw-leonis">Read Full Article...</a></p><b>Key Programme: </b>MESS<br/><b>Coordinates: </b><br/>Right Ascension: 9h 47m 57s ; Declination: +13° 16′ 43.6″]]></description>
+     <LookAt>
+       <longitude>-34</longitude>
+       <latitude>13</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-34,13,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/GOODS-South_Herschel-Spitzer_large.png" alt="GOODS-South_Herschel-Spitzer_small.png" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has shown that the most distant galaxies observed by Herschel were not different from local galaxies as astronomer expected.<br/><a href="https://herscheltelescope.org.uk/results/goods-south">Read Full Article...</a></p><b>Key Programme: </b>GOODS-Herschel<br/><b>Coordinates: </b><br/>Right Ascension: 03h 32m ; Declination -27° 48′]]></description>
+     <LookAt>
+       <longitude>-127</longitude>
+       <latitude>27.8</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-127,27.8,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Spitzer_OrionNebula_PIA08653.jpg" alt="Spitzer_OrionNebula_PIA08653_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has discovered molecular oxygen in space for the first time, deep in the heart of the Orion Nebula.<br/><a href="https://herscheltelescope.org.uk/results/oxygen-orion-nebula">Read Full Article...</a></p><b>Key Programme: </b>Herschel Oxygen Project<br/><b>Coordinates: </b><br/>Right Ascension: 05h 35m ; Declination -05° 23′ ]]></description>
+     <LookAt>
+       <longitude>-96.75</longitude>
+       <latitude>-5.1833</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-96.75,-5.1833,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Enceladus_Cassini_Herschel_SWAS_notext.png" alt="Enceladus_Cassini_Herschel_SWAS_notext_small.png" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has discovered that water spewing from Saturn's moon, Enceladus, is raining down into the upper atmosphere of the ringed planet.<br/><a href="https://herscheltelescope.org.uk/results/enceladus">Read Full Article...</a></p><b>Key Programme: </b>HSSO<br/><b>Coordinates: </b><br/>]]></description>
+     <LookAt>
+       <longitude>-1</longitude>
+       <latitude>3</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#solar-system</styleUrl>
+     <Point>
+       <coordinates>-1,3,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Herschel_GalacticCentre_large.jpg" alt="Herschel_GalacticCentre_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has taken images of a ring of gas and dust at the heart of our Galaxy, which is twisted for reasons yet to be explained.<br/><a href="https://herscheltelescope.org.uk/results/twisted-ring-galactic-centre">Read Full Article...</a></p><b>Key Programme: </b>Hi-GAL<br/><b>Coordinates: </b><br/>Right Ascension: 17h 45m 37s ; Declination: -28° 56′ 10″]]></description>
+     <LookAt>
+       <longitude>86.40508</longitude>
+       <latitude>-28.93617</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>86.40508,-28.93617,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/RCW120_v03.jpg" alt="RCW120_v03_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>A massive star in the process of forming has been spotted by Herschel - and could end up being one of the biggest and brightest in our Galaxy<br/><a href="https://herscheltelescope.org.uk/results/rcw120">Read Full Article...</a></p><b>Key Programme: </b>HOBYS<br/><b>Coordinates: </b><br/>Right Ascension: 17h 12′ 23.00″ ; Declination: -38° 28′]]></description>
+     <LookAt>
+       <longitude>78.096</longitude>
+       <latitude>-38.467</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>78.096,-38.467,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Uranus_SPIRE_high.png" alt="Uranus_SPIRE_low.png" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The planet Uranus, as seen by the SPIRE instrument on board Herschel<br/><a href="https://herscheltelescope.org.uk/results/uranus">Read Full Article...</a></p><b>Key Programme: </b>SPIRE Calibration target<br/><b>Coordinates: </b><br/>Various, but as of May 2011, in the constellation of Pisces]]></description>
+     <LookAt>
+       <longitude>-176.90003</longitude>
+       <latitude>0.56405</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#solar-system</styleUrl>
+     <Point>
+       <coordinates>-176.90003,0.56405,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/polaris_flare_Herschel.jpg" alt="polaris_flare_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The Polaris Flare is a network of dusty filaments in the same area of sky as the star Polaris.<br/><a href="https://herscheltelescope.org.uk/results/polaris-flare">Read Full Article...</a></p><b>Key Programme: </b>Evolution of Interstellar Dust<br/><b>Coordinates: </b><br/>Right Ascension: 2h 0m ; Declination: +87° 42′]]></description>
+     <LookAt>
+       <longitude>-150</longitude>
+       <latitude>87.7</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-150,87.7,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/IC5146_Herschel.jpg" alt="IC5146_Herschel_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The region around the Cocoon Nebula contains a network of filaments of gas and dust.<br/><a href="https://herscheltelescope.org.uk/results/interstellar-cloud-ic5246">Read Full Article...</a></p><b>Key Programme: </b>Gould Belt Survey<br/><b>Coordinates: </b><br/>Right Ascension: 21h 53m 30s ; Declination: +47° 15′ 45″]]></description>
+     <LookAt>
+       <longitude>148.375</longitude>
+       <latitude>47.2625</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>148.375,47.2625,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/darkmatterhalos_large.jpg" alt="darkmatterhalos_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Astronomers have used Herschel to reveal just how much dark matter it takes to give rise to a galaxy bursting with stars. The findings are a key step in understanding how dark matter contributed to the birth of massive galaxies in the early Universe.<br/><a href="https://herscheltelescope.org.uk/results/dark-matter-halos">Read Full Article...</a></p><b>Key Programme: </b>HerMES<br/><b>Coordinates: </b><br/>Right Ascension: 10h 45m ; Declination: +58° 00′ ]]></description>
+     <LookAt>
+       <longitude>-20.75</longitude>
+       <latitude>56</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-20.75,56,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/M31_XMM_HERSCHEL_large.jpg" alt="M31_XMM_HERSCHEL_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has combined forces with ESA's XMM-Newton x-ray satellite to image the Andromeda Galaxy.<br/><a href="https://herscheltelescope.org.uk/results/andromeda-galaxy">Read Full Article...</a></p><b>Key Programme: </b>HELGA<br/><b>Coordinates: </b><br/>Right Ascension: 00h 42m 44.3s ; Declination: +41° 16′ 9″]]></description>
+     <LookAt>
+       <longitude>-169.315</longitude>
+       <latitude>41.269</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-169.315,41.269,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Hartley2-SPIRE_large.png" alt="Hartley2-SPIRE_small.png" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel observed comet Hartley 2 for 25 days around the time of the flyby of NASA's Deep Impact probe on 4th November 2010<br/><a href="https://herscheltelescope.org.uk/results/comet-hartley-2">Read Full Article...</a></p><b>Key Programme: </b>HSSO<br/><b>Coordinates: </b><br/>Various: the comet moves against the background galaxies as it orbits the Sun every 6.5 years]]></description>
+     <LookAt>
+       <longitude>-89.2</longitude>
+       <latitude>31.2</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#solar-system</styleUrl>
+     <Point>
+       <coordinates>-89.2,31.2,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Herschel-ATLAS_SDP_large.jpg" alt="Herschel-ATLAS_SDP_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The first data from the Herschel-ATLAS survey has revealed gravitational lenses - with remarkable efficiency.<br/><a href="https://herscheltelescope.org.uk/results/herschel-atlas-gravitational-lenses">Read Full Article...</a></p><b>Key Programme: </b>Herschel-ATLAS<br/><b>Coordinates: </b><br/>Right Ascension: 09h 05m 0s ; Declination: +0° 30′]]></description>
+     <LookAt>
+       <longitude>-43.75</longitude>
+       <latitude>0.5</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-43.75,0.5,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/SPIRE_M82_large.jpg" alt="SPIRE_M82_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The galaxy Messier 82 is suffering a bout of star formation, fuelled by its close interaction with its close neighbour Messier 81.  Herschel has uncovered the nature of its gas<br/><a href="https://herscheltelescope.org.uk/results/messier-82">Read Full Article...</a></p><b>Key Programme: </b>VNGS<br/><b>Coordinates: </b><br/>Right Ascension: 09h 55m 52.2s ; Declination: +69° 40′ 47″]]></description>
+     <LookAt>
+       <longitude>-31.0325</longitude>
+       <latitude>69.67972</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-31.0325,69.67972,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/CWLeo.jpg" alt="CWLeo_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The red giant carbon star CW Leonis has been found to have water forming in the warm regions surrounding it - where it was previously thought to be impossible.<br/><a href="https://herscheltelescope.org.uk/results/cw-leonis">Read Full Article...</a></p><b>Key Programme: </b>MESS<br/><b>Coordinates: </b><br/>Right Ascension: 09h 47m 57.38s ; Declination: +13° 16′ 43.6″]]></description>
+     <LookAt>
+       <longitude>-33.01</longitude>
+       <latitude>13.279</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-33.01,13.279,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/RegionL30_70_160_250_v2_large.jpg" alt="RegionL30_70_160_250_v2_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>A portion of the Galactic Plane, showing stars blowing bubbles in the interstellar medium.<br/><a href="https://herscheltelescope.org.uk/results/galactic-plane-aquila">Read Full Article...</a></p><b>Key Programme: </b>Hi-GAL<br/><b>Coordinates: </b><br/>Right Ascension: 18h 46m 22s ; Declination: +2° 36′ 33″]]></description>
+     <LookAt>
+       <longitude>101.6</longitude>
+       <latitude>2.61</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>101.6,2.61,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Abell2218_rgb_smoothed.png" alt="Abell2218_rgb_small_smoothed.png" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The gravitational effect of a massive cluster of galaxies mends light to allow Herschel to see distant galaxies as they were over 10 billion years ago.<br/><a href="https://herscheltelescope.org.uk/results/abell-2218">Read Full Article...</a></p><b>Key Programme: </b>HerMES<br/><b>Coordinates: </b><br/>Right Ascension: 16h 35m 54s ; Declination: +66° 13′ 00″]]></description>
+     <LookAt>
+       <longitude>68.975</longitude>
+       <latitude>66.2167</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>68.975,66.2167,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Lockman-SWIRE_hi.jpg" alt="Lockman-SWIRE_lo.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>When observed by Herschel, a small patch of sky in Ursa Major reveals thousands of distant galaxies<br/><a href="https://herscheltelescope.org.uk/results/lockman-hole">Read Full Article...</a></p><b>Key Programme: </b>HerMES<br/><b>Coordinates: </b><br/>Right Ascension: 10h 45m ; Declination: +58° 00′]]></description>
+     <LookAt>
+       <longitude>-18.75</longitude>
+       <latitude>58</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-18.75,58,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/goodsn_3colour_cropped.jpg" alt="goodsn_3colour_cropped_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has imaged a regions of sky containing thousands of distant galaxies.  Some are seen as they were 10 billion years ago<br/><a href="https://herscheltelescope.org.uk/results/goods-north">Read Full Article...</a></p><b>Key Programme: </b>HerMES<br/><b>Coordinates: </b><br/>Right Ascension: 12h 36m 49.4s ; Declination: +62° 12′ 58″]]></description>
+     <LookAt>
+       <longitude>10</longitude>
+       <latitude>63</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>10,63,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/HOPS_Herschel-NIR_cropped.jpg" alt="HOPS_Herschel-NIR_crop_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Herschel has looked at a dark nebula, expecting to find a cloud of cold gas and dust.  Instead, it has found that it is a hole in the nebula, excavated by the strong radiation from a nearby star.<br/><a href="https://herscheltelescope.org.uk/results/ngc1999-hole-space">Read Full Article...</a></p><b>Key Programme: </b>HOPS<br/><b>Coordinates: </b><br/>Right Ascension: 5h 36m 27s ; Declination: -6° 43′ 18.0″]]></description>
+     <LookAt>
+       <longitude>-95.775</longitude>
+       <latitude>-6.722</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-95.775,-6.722,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/RegionL59_70_160_250_v2.jpg" alt="RegionL59_70_160_250_v2_small.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>A portion of the Galactic Plane, showing stars forming along filaments<br/><a href="https://herscheltelescope.org.uk/results/galactic-plane-vulpecula">Read Full Article...</a></p><b>Key Programme: </b>Hi-GAL<br/><b>Coordinates: </b><br/>Right Ascension: 19h 41m 44.30s ; Declination: +23° 1′ 22″]]></description>
+     <LookAt>
+       <longitude>115.435</longitude>
+       <latitude>23.023</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>115.435,23.023,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Rosette_Herschel_hi.jpg" alt="Rosette_Herschel_sm.png" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>This image from SPIRE and PACS shows star formation in the Rosette Nebula<br/><a href="https://herscheltelescope.org.uk/results/rosette-nebula">Read Full Article...</a></p><b>Key Programme: </b>HOBYS<br/><b>Coordinates: </b><br/>Right Ascension: 6h 34m 20.00s ; Declination: +4° 7′ 00"]]></description>
+     <LookAt>
+       <longitude>-81.417</longitude>
+       <latitude>4.117</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-81.417,4.117,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Aquila_Herschel_hi.png" alt="Aquila_Herschel_lo.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Observations of a region in the disc of our Galaxy, in the constellation of Aquila the Eagle, have revealed hundreds of stars in the process of forming.<br/><a href="https://herscheltelescope.org.uk/results/young-stars-eagles-nest">Read Full Article...</a></p><b>Key Programme: </b>Gould Belt Survey<br/><b>Coordinates: </b><br/>Right Ascension:  18h 31′ 29.00″ ; Declination: -2° 11′ 51.00″]]></description>
+     <LookAt>
+       <longitude>97.871</longitude>
+       <latitude>-2.1975</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>97.871,-2.1975,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Orion_Herschel-HIFI_hi.png" alt="Orion_Herschel-HIFI_sm.png" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The HIFI spectrometer on board Herschel has detected the presence of complex molecules in regions of the Orion Nebula.<br/><a href="https://herscheltelescope.org.uk/results/complex-molecules-orion-nebula">Read Full Article...</a></p><b>Key Programme: </b>HEXOS<br/><b>Coordinates: </b><br/>Right Ascension: 05h 35m ; Declination -05° 23′]]></description>
+     <LookAt>
+       <longitude>-96.25</longitude>
+       <latitude> -5.3833</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-96.25, -5.3833,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/VYCMa_Herschel-SPIRE_hi_wide.png" alt="VYCMa_Herschel-SPIRE_lo.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>Spectroscopy of the largest known star in our Galaxy, VY Canis Majoris, has shown the presence of water in its outer atmosphere.<br/><a href="https://herscheltelescope.org.uk/results/spectrum-massive-star-vy-canis-majoris">Read Full Article...</a></p><b>Key Programme: </b>MESS<br/><b>Coordinates: </b><br/>Right Ascension: 07h 22m 58.33s ; Declination: −25° 46′ 03.17″]]></description>
+     <LookAt>
+       <longitude>-69.257</longitude>
+       <latitude>-25.767</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>-69.257,-25.767,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/Southern_Cross_Herschel_large.jpg" alt="Southern_Cross_Herschel_sm.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The SPIRE and PACS instruments have worked in parallel to observe an area of sky in the far-infrared over the wavelength range of 70-500 microns.<br/><a href="https://herscheltelescope.org.uk/results/southern-cross">Read Full Article...</a></p><b>Key Programme: </b>Gould Belt Survey<br/><b>Coordinates: </b><br/>Right Ascension: 12h 15m 49.00s ; Declination: -62° 45′ 18.00″]]></description>
+     <LookAt>
+       <longitude>3.954</longitude>
+       <latitude>-62.772</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#galactic</styleUrl>
+     <Point>
+       <coordinates>3.954,-62.772,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/M66_Herschel-SPIRE-250_hi.png" alt="M66_Herschel-SPIRE-250_lo.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The spiral galaxy M66 was one of the first galaxies to be imaged by the SPIRE instrument on Herschel.<br/><a href="https://herscheltelescope.org.uk/results/spiral-galaxy-m66">Read Full Article...</a></p><b>Key Programme: </b><br/><b>Coordinates: </b><br/>Right Ascension: 11h 20m 15.0s ; Declination: +12° 59′ 30″]]></description>
+     <LookAt>
+       <longitude>-9.9375</longitude>
+       <latitude>12.9917</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-9.9375,12.9917,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/M74_Herschel-SPIRE-250_hi.png" alt="M74_Herschel-SPIRE-250_lo.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The spiral galaxy M74 was one of the first galaxies imaged by SPIRE.  As well as the galaxy itself, many much more distant background galaxies can be seen.<br/><a href="https://herscheltelescope.org.uk/results/spiral-galaxy-m74">Read Full Article...</a></p><b>Key Programme: </b><br/><b>Coordinates: </b><br/>Right Ascension: 01h 36m 41.8s; Declination: +15° 47′ 01″]]></description>
+     <LookAt>
+       <longitude>-155.8258</longitude>
+       <latitude>15.7836</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>-155.8258,15.7836,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+ 
+ <Placemark>
+     <name></name>
+     <description><![CDATA[<p><class style="padding:5px;"><img src="imagecache/M51_Herschel-PACS_hi.jpg" alt="M51_Herschel-PACS_lo.jpg" title="" width="150" class="imagecache imagecache-results_slider_thumb"/></class>The first image aver taken by Herschel, this image of the nearby spiral Galaxy called "M51" shows the power of the Herschel telescope<br/><a href="https://herscheltelescope.org.uk/results/whirlpool-galaxy">Read Full Article...</a></p><b>Key Programme: </b><br/><b>Coordinates: </b><br/>Right Ascension: 13h 29′ 52.37″ ; Declination: +47° 11′ 40.80″]]></description>
+     <LookAt>
+       <longitude>22.468</longitude>
+       <latitude>47.1947</latitude>
+       <altitude>0</altitude>
+       <range>500000</range>
+       <tilt>0</tilt>
+       <heading>0</heading>
+     </LookAt>
+     <styleUrl>#extra-galactic</styleUrl>
+     <Point>
+       <coordinates>22.468,47.1947,0</coordinates>
+     </Point>
+   </Placemark>
+
+
+
+
+</Document>
+</kml>
+

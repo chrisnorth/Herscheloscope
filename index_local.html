@@ -1,0 +1,139 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Chromoscope - View the Universe in different wavelengths</title>
+	<link rel="icon" type="image/vnd.microsoft.icon" href="http://www.chromoscope.net/favicon.ico" />
+	<link rel="stylesheet" href="herschel-0.1.0/herschel.css" type="text/css" />
+	<!--[if IE 6]><link rel="stylesheet" href="1.4.3/style-ie.css" type="text/css" /><![endif]-->
+	<script src="1.4.3/jquery-1.7.1.min.js"></script>
+	<script src="1.4.3/jquery.mousewheel.min.js"></script>
+	<script src="1.4.3/chromoscope.js"></script>
+	<script src="1.4.3/chromoscope-lookup.js"></script>
+	<script src="1.4.3/chromoscope-kml.js"></script>
+	<script src="1.4.3/chromoscope-contextmenu.js"></script>
+	<!--<script src="1.4.3/chromoscope-coordswitcher.js"></script>-->
+	<script type="text/javascript" src="herschel-0.1.0/chromoscope-reregisterkey.js"></script>
+	<script type="text/javascript" src="1.4.3/ui/jquery.ui.core.min.js"></script>
+	<script type="text/javascript" src="1.4.3/ui/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="1.4.3/ui/jquery.ui.mouse.min.js"></script>
+	<script type="text/javascript" src="1.4.3/ui/jquery.ui.sortable.min.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox2/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox2/jquery.fancybox.css" media="screen" />
+	<script type="text/javascript" src="herschel-0.1.0/herschel.js"></script>
+	<script type="text/javascript">
+	<!--
+  	var kmlUrl = 'kml_files/results.kml';
+	
+	// Set up the Chromoscope
+	$(document).ready(function(){
+		chromo = $.chromoscope({showintro:false,showshare:false,showabout:false,showlangs:false,showcontext:false,kml:'kml_files/results.kml'});
+		// The spectral bands should be in order
+		chromo.addWavelength({useasdefault:false,key:'g',name:'gamma',tiles:'fermi_3yr-tiles/',ext:'jpg',title:'gamma',attribution:'<a href="http://fermi.gsfc.nasa.gov/">Fermi</a>'});
+		chromo.addWavelength({useasdefault:false,key:'x',name:'xray',tiles:'RASS-tiles/',ext:'jpg',title:'xray',attribution:'<a href="http://www.mpe.mpg.de/xray/wave/rosat/index.php">ROSAT</a>'});
+		chromo.addWavelength({useasdefault:false,key:'v',name:'optical',tiles:'DSS-tiles/',ext:'jpg',title:'optical',attribution:'<a href="http://stdatu.stsci.edu/dss/">DSS2</a>/<a href="http://www.wikisky.org/">Wikisky</a>'});
+		chromo.addWavelength({useasdefault:false,key:'a',name:'halpha',tiles:'H-alpha-tiles/',ext:'jpg',title:'halpha',attribution:'<a href="http://www.astro.wisc.edu/wham/">WHAM</a>/<a href="http://www.phys.vt.edu/~halpha/">VTSS</a>/<a href="http://amundsen.swarthmore.edu/">SHASSA</a>/<a href="http://www.cfa.harvard.edu/~dfinkbei/">Finkbeiner</a>'});
+		chromo.addWavelength({useasdefault:true,key:'f',name:'farir',tiles:'SPIRE_Phot_Spec_Planck-857-tiles/',ext:'jpg',title:'farir',attribution:'ESA/<a href="http://www.esa.int/herschel">Herschel</a>/<a href="http://www.esa.int/herschel">Planck</a>'});
+		chromo.addWavelength({useasdefault:false,key:'m',name:'microwave',tiles:'Planck-tiles/',ext:'jpg',title:'microwave',attribution:'<a href="http://www.esa.int/esaCP/SEMF2FRZ5BG_index_0.html">ESA Planck</a> LFI &amp; HFI Consortia (2010)'});
+		chromo.addWavelength({useasdefault:false,key:'r',name:'radio',tiles:'Radio_vsmoothed-tiles/',ext:'jpg',title:'radio',attribution:'<a href="http://lambda.gsfc.nasa.gov/product/foreground/haslam_408.cfm">Haslam et al.</a>'});
+		// Annotation layers will be shown at all wavelengths
+		chromo.addAnnotationLayer({opacity:0.4,key:'c',name:'labels',tiles:'labels_const_gal/',tiles_eq:'labels_const_EQ/',ext:'jpg',title:'Constellation labels',attribution:'Constellation labels'});
+		chromo.addAnnotationLayer({opacity:0.4,key:'l',name:'labels-planck',tiles:'labels_planck/',ext:'jpg',title:'Herschel labels',attribution:'Planck Labels'});
+
+		// Load the map
+		chromo.load(setupHerschel);
+		chromo.readKML('kml_files/results-imgs.kml');
+		$(".pinholder").css({display:'block'});
+		//chromo.toggleResults();
+		//rebuild the Help text
+		chromo.phrasebook.helpdesc="This website allows you to browse view observations from the <a href=\"http://www.esa.int/herschel\">Herschel</a>-SPIRE instrument. The SPIRE images are shown at a resolution of around 2 arcminutes, which is much poorer than the resolution of the instrument. They are based on SPG-11.1 maps, and therefore still show some artefacts (such as stripes) which are not present in later data. Blue spots show the locations of SPIRE spectrometer observations.<br><br> <span class=\"keyboard\">The keyboard controls are:<ul class=\"chromo_controlkeys\"></ul></span><span class=\"nokeyboard\"><ul class=\"chromo_controlbuttons\"></ul></span> <span class=\"keyboard\">This webpage is based on <a href=\"http://www.chromoscope.net\">Chromoscope</a> created by <a href=\"http://www.strudel.org.uk/\">Stuart Lowe</a>, <a href=\"http://orbitingfrog.com/blog/\">Rob Simpson</a>, and <a href=\"http://www.astro.cardiff.ac.uk/contactsandpeople/?page=full&id=493\">Chris North</a>. You can also <a href=\"http://blog.chromoscope.net/download/\">download it</a> to run locally.</span>";
+		chromo.buildHelp(true);
+
+		//chromo.showintro=true;
+		chromo.phrasebook.intro="This website allows you to browse view observations from the <a href=\"http://www.esa.int/herschel\">Herschel</a>-SPIRE instrument, and compare with full-sky images from the <a href=\"http://www.esa.int/planck\">Planck</a> satellite and at visible light. The background image is the Planck 857 GHz image. Blue spots show the locations of SPIRE spectrometer observations. <br><br>You can turn on labels (press \"l\") or show constellations (press \"c\"). If you get stuck, click &quot;Help&quot; in the bottom left. <br><br><span class=\"keyboard\">This webpage is based on <a href=\"http://www.chromoscope.net\">Chromoscope</a> created by <a href=\"http://www.strudel.org.uk/\">Stuart Lowe</a>, <a href=\"http://orbitingfrog.com/blog/\">Rob Simpson</a>, and <a href=\"http://www.astro.cardiff.ac.uk/contactsandpeople/?page=full&id=493\">Chris North</a>. You can also <a href=\"http://blog.chromoscope.net/download/\">download it</a> to run locally.</span>";
+		chromo.buildIntro();
+		
+		chromo.registerKey('j',function(){
+		$(this.body+" h1").toggle();
+		$(this.body+" h2").toggle();
+		$(this.body+" .chromo_message").hide();
+		$(this.body+" .chromo_layerswitcher").toggle();
+		$(this.body+" .chromo_helplink").toggle();
+		$(this.body+" .chromo_help").hide();
+		$(this.body+" .chromo_info").hide();
+		$(this.body+" .chromo_pingroups_list").toggle();
+		$(this.body+" .chromo_title").toggle();
+		$(this.body+" #kiosk").toggle();
+		});
+		
+		$(".moreinfo").fancybox({
+		width:1000,
+		height:600,
+		transitionIn: 'fade',
+		transitionOut: 'fade'});
+		/*{
+		width		: 1000,
+		height		: 600,
+		autoScale	: false,
+       		transitionIn	: 'fade',
+       		transitionOut	: 'fade',
+       		type		: 'iframe',
+		autoDimensions	: 'false',
+		iframe: {
+		scrolling : 'auto',
+		preload   : true
+		}
+       		});*/
+		
+	});
+
+
+	// --></script>
+	<style>
+	  body {
+	  margin: 0;
+	  font-family: Arial, sans-serif;
+	  background-color: black;
+	  color: white;
+	  }
+	  a { color: #6666ff; }
+	</style>
+
+</head>
+<body>
+	<div class="chromo_title">
+	  
+		<!--<a href="http://www.esa.int/herschel"><img id="titimg" src="herschel_logo.gif"></a>-->
+		<h1 class="subt"><a href="http://www.chromoscope.net">www.chromoscope.net</a></h1>
+		<!--<h1 class="subt">Frequency View</h1>-->
+		<h2 class="chromo_version"></h2>
+		<!--<h2>Kiosk Mode</h2>-->
+	</div>
+	
+	<div id="kiosk" style="height:130px">
+		<div id="menu-title">Options</div>
+		<div class="minmax min"></div>
+		<div id="options">
+			<div id="column" class="left">
+				<!--<div id="option" class="option-quit">
+					<div class="label">Herschel Presentation</div>
+				</div>-->
+				<div class="option" id="option-const">
+					<div id="on-off" class="off"></div>
+					<div class="label">Constellations</div>
+				</div>
+				<div class="option" id="option-labels">
+					<div id="on-off" class="off"></div>
+					<div class="label">Sky Labels</div>
+				</div>
+				<div class="option" id="option-kml">
+					<div id="on-off" class="on"></div>
+					<div class="label">Results</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+  
+        <div class="chromo_message">"This view shows observations from the <a href=\"http://www.esa.int/herschel\">Herschel</a> SPIRE instrument. The positions of spectrometer observations are shown as pale blue dots. The observations are shown against the 857 GHz map from the <a href=\"http://www.esa.int/planck\">Planck</a> satellite. If you get stuck, click &quot;Help&quot; in the bottom left."</div>
+</body>
+</html>

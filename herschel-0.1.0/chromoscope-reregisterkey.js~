@@ -1,0 +1,63 @@
+(function ($) {
+
+    function init(chromo) {
+	
+	// Re-register (i.e. replace) keyboard commands and associated functions
+	chromo.reregisterKey = function(charCode,fn,txt){
+	    console.log('reregistering ',charCode)
+	    if(typeof charCode!="object") charCode = [charCode];
+	    console.log('reregistering ',charCode)
+	    console.log(fn);
+	    for(c = 0 ; c < charCode.length ; c++){
+		ch = (typeof charCode[c]=="string") ? charCode[c].charCodeAt(0) : charCode[c];
+		console.log('searching for',ch,' in ',this.keys.length,' keys');
+		available = true;
+		for(i = 0 ; i < this.keys.length ; i++){
+		    //console.log('trying ',this.keys[i].charCode);
+		    if(this.keys[i].charCode == ch) {
+			available = false;
+			//replace key
+			this.keys[i]={charCode:ch,char:String.fromCharCode(ch),fn:fn,txt:txt};
+			character=String.fromCharCode(ch)
+			console.log('replacing key ',character);
+			/*var srch="<strong>"+character
+			$(this.body+" .chromo_controlkeys li").each(function(){
+			    if(this.innerHTML.match(srch)){
+				console.log('found ',this.innerHTML.match(srch));
+				console.log(chromo.phrasebook.alignment);
+				console.log(this);
+				if(chromo.phrasebook.alignment=="right"){
+				    a = '<strong>'+String.fromCharCode(ch)+'</strong>'
+				    b = txt;
+				}else{
+				    b = '<strong>'+String.fromCharCode(ch)+'</strong>'
+				    a = txt;
+				}
+				if(txt) this.innerHTML = a+' - '+b;
+				console.log(this.innerHTML);
+			    }
+			});*/
+		    }
+		}
+		if(available){
+		    this.keys.push({charCode:ch,char:String.fromCharCode(ch),fn:fn,txt:txt});
+		    if(this.phrasebook.alignment=="right"){
+			a = '<strong>'+String.fromCharCode(ch)+'</strong>'
+			b = txt;
+		    }else{
+			b = '<strong>'+String.fromCharCode(ch)+'</strong>'
+			a = txt;
+		    }
+		    if(txt) $(this.body+" .chromo_controlkeys").append('<li>'+a+' - '+b+'</li>');
+		}
+	    }
+	    //chromo.buildHelp(true);
+	    return this;
+	}
+    }
+    $.chromoscope.plugins.push({
+	init: init,
+	name: 'reregisterkey',
+	version: '1.0'
+    });	
+})(jQuery);

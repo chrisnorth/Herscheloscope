@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" hint="target=sky">
+<Document>
+<name>Herschel Results</name>
+ <Style id='default'>
+	<IconStyle>
+	<Icon>
+	<href>pin_default.png</href>
+	</Icon>
+	</IconStyle>
+	<LabelStyle>
+	<color>00ffffff</color>
+	</LabelStyle>
+ </Style>
+ <Style id='solar-system'>
+	<IconStyle>
+	<Icon>
+	<href>pin_ss.png</href>
+	</Icon>
+	</IconStyle>
+	<LabelStyle>
+	<color>00ffffff</color>
+	</LabelStyle>
+ </Style>
+ <Style id='galactic'>
+	<IconStyle>
+	<Icon>
+	<href>pin_galactic.png</href>
+	</Icon>
+	</IconStyle>
+	<LabelStyle>
+	<color>00ffffff</color>
+	</LabelStyle>
+ </Style>
+ <Style id='extra-galactic'>
+	<IconStyle>
+	<Icon>
+	<href>pin_extraGalactic.png</href>
+	</Icon>
+	</IconStyle>
+	<LabelStyle>
+	<color>00ffffff</color>
+	</LabelStyle>
+ </Style>
+  <Placemark>
+    <name>Eagle Nebula</name>
+    <description><![CDATA[<a href="more/Eagle-nebula.html" class="moreinfo"><img src="images/M16_HERSCHEL_large.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>97.2</longitude>
+      <latitude>13.816667</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>97.2,13.816667,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>Small Magellanic Cloud</name>
+    <description><![CDATA[<a href="more/SMC.html" class="moreinfo"><img src="images/SMC_Herschel_Spitzer_large.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-166.75</longitude>
+      <latitude>-72.83333</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-166.75,-72.8333,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Large Magellanic Cloud</name>
+    <description><![CDATA[<a href="more/LMC.html" class="moreinfo"><img src="images/LMC_Herschel_Spitzer_large.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-97.25</longitude>
+      <latitude>-71.75</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-97.25,-71.75,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Galactic Plane - Centaurus</name>
+    <description><![CDATA[<a href="more/Galactic-Plane-Centaurus.html" class="moreinfo"><img src="images/HiGal_L310-319_large.jpg" width="150" height="25"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>37.225</longitude>
+      <latitude>-61.6447</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>37.225,-61.6447,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>GOODS-South</name>
+    <description><![CDATA[<a href="more/goods-south.html" class="moreinfo"><img src="images/GOODS-South_Herschel-Spitzer_large.png" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-127</longitude>
+      <latitude>-27.8</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-127,-27.8,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Oxygen in the Orion Nebula</name>
+    <description><![CDATA[<a href="more/water_orion.html" class="moreinfo"><img src="images/Herschel-spectrum_OrionNebula-Spitzer.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-96.75</longitude>
+      <latitude>-5.1833</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>-96.75,-5.1833,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Enceladus</name>
+    <description><![CDATA[<a href="more/enceladus.html" class="moreinfo"><img src="images/Enceladus_Cassini_Herschel_SWAS_large.png" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-1</longitude>
+      <latitude>3</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#solar-system</styleUrl>
+    <Point>
+      <coordinates>-1,3,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>A Twisted ring in the Galactic Centre</name>
+    <description><![CDATA[<a href="more/galactic_centre.html" class="moreinfo"><img src="images/Herschel_GalacticCentre_large.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>86.40508</longitude>
+      <latitude>-28.93617</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>86.40508,-28.93617,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Supernova 1987a</name>
+    <description><![CDATA[<a href="more/sn1987a.html" class="moreinfo"><img src="images/SN1987A_SPIRE-Spitzer_circle.png" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-96.1333</longitude>
+      <latitude>-69.27</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-96.1333,69.27,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Uranus</name>
+    <description><![CDATA[<a href="more/uranus.html" class="moreinfo"><img src="images/Uranus_SPIRE_high_0.png" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-176.90003</longitude>
+      <latitude>0.56405</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#solar-system</styleUrl>
+    <Point>
+      <coordinates>-176.90003,0.56405,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Cocoon Nebula</name>
+    <description><![CDATA[<a href="more/ic5146.html" class="moreinfo"><img src="images/IC5146_Herschel.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>148.375</longitude>
+      <latitude>47.2625</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>148.375,47.2625,0</coordinates>
+    </Point>
+  </Placemark>
+
+<Placemark>
+    <name>Polaris Flare</name>
+    <description><![CDATA[<a href="more/polaris_flare.html" class="moreinfo"><img src="images/polaris_flare_Herschel.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-150</longitude>
+      <latitude>87.7</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>-150,87.7,0</coordinates>
+    </Point>
+  </Placemark>
+
+<Placemark>
+    <name>Dark Matter Halos</name>
+    <description><![CDATA[<a href="more/darkmatterhalos.html" class="moreinfo"><img src="images/darkmatterhalos_large.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-20.75</longitude>
+      <latitude>56</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-20.75,56,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Andromeda Galaxy</name>
+    <description><![CDATA[<a href="more/andromeda.html" class="moreinfo"><img src="images/M31_XMM_HERSCHEL_large_1.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-169.315</longitude>
+      <latitude>41.269</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-169.315,41.269,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>Comet Hartley 2</name>
+    <description><![CDATA[<a href="more/Comet-Hartley-2.html" class="moreinfo"><img src="images/Hartley2-SPIRE_large.png" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-89.2</longitude>
+      <latitude>31.2</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#solar-system</styleUrl>
+    <Point>
+      <coordinates>-89.2,31.2,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>Herschel-ATLAS Gravitational Lenses</name>
+    <description><![CDATA[<a href="more/Herschel-ATLAS-Gravitational-Lenses.html" class="moreinfo"><img src="images/Herschel-ATLAS_SDP_large.jpeg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-43.75</longitude>
+      <latitude>0.5</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-43.75,0.5,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>Messier 82</name>
+    <description><![CDATA[<a href="more/Messier-82.html" class="moreinfo"><img src="images/SPIRE_M82_large.jpeg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-31.0325</longitude>
+      <latitude>69.67972</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-31.0325,69.67972,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>CW Leonis</name>
+    <description><![CDATA[<a href="more/CW-Leonis.html" class="moreinfo"><img src="images/CWLeo_0.jpeg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-33.01</longitude>
+      <latitude>13.279</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>-33.01,13.279,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>Galactic Plane - Aquila</name>
+    <description><![CDATA[<a href="more/Galactic-Plane-Aquila.html" class="moreinfo"><img src="images/RegionL30_70_160_250_v2_large.jpeg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>101.6</longitude>
+      <latitude>2.61</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>101.6,2.61,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>Abell 2218</name>
+    <description><![CDATA[<a href="more/Abell-2218.html" class="moreinfo"><img src="images/Abell2218_rgb_smoothed.png" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>68.975</longitude>
+      <latitude>66.2167</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>68.975,66.2167,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>The Lockman Hole</name>
+    <description><![CDATA[<a href="more/The-Lockman-Hole.html" class="moreinfo"><img src="images/Lockman-SWIRE_hi.jpeg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-18.75</longitude>
+      <latitude>58</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-18.75,58,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>GOODS-North</name>
+    <description><![CDATA[<a href="more/GOODS-North.html" class="moreinfo"><img src="images/goodsn_3colour_cropped.jpeg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>9.206</longitude>
+      <latitude>62.216</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>9.206,62.216,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>NGC1999 - A hole in space</name>
+    <description><![CDATA[<a href="more/NGC1999-A-hole-in-space.html" class="moreinfo"><img src="images/HOPS_Herschel-NIR_cropped.jpeg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-95.775</longitude>
+      <latitude>-6.722</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>-95.775,-6.722,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>RCW120</name>
+    <description><![CDATA[<a href="more/RCW120.html" class="moreinfo"><img src="images/RCW120_v03.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>78.096</longitude>
+      <latitude>-38.467</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>78.096,-38.467,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Rosette Nebula</name>
+    <description><![CDATA[<a href="more/RosetteNebula.html" class="moreinfo"><img src="images/Rosette_Herschel_hi.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-81.417</longitude>
+      <latitude>4.117</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>-81.417,4.117,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Galactic Plane - Vulpecula</name>
+    <description><![CDATA[<a href="more/Galactic-Plane-Vulpecula.html" class="moreinfo"><img src="images/RegionL59_70_160_250_v2.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>115.435</longitude>
+      <latitude>23.023</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>115.435,23.023,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Young Stars in Aquila</name>
+    <description><![CDATA[<a href="more/Young-Stars-Aquila.html" class="moreinfo"><img src="images/Aquila_Herschel_hi.png" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>97.871</longitude>
+      <latitude>-2.1975</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>97.871,-2.1975,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>The Orion Nebula</name>
+    <description><![CDATA[<a href="more/Orion-Spectrum.html" class="moreinfo"><img src="images/Orion_Herschel-HIFI_hi.png" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-96.25</longitude>
+      <latitude> -5.3833</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>-96.25, -5.3833,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>VY Canis Majoris</name>
+    <description><![CDATA[<a href="more/VY_CMa.html" class="moreinfo"><img src="images/VYCMa_Herschel-SPIRE_lo.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-69.257</longitude>
+      <latitude>-25.767</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>-69.257,-25.767,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Southern Cross</name>
+    <description><![CDATA[<a href="more/SouthernCross.html" class="moreinfo"><img src="images/Southern_Cross_Herschel_hi.jpg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>3.954</longitude>
+      <latitude>-62.772</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#galactic</styleUrl>
+    <Point>
+      <coordinates>3.954,-62.772,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Messier 66</name>
+    <description><![CDATA[<a href="more/M66.html" class="moreinfo"><img src="images/M66_Herschel-SPIRE-250_hi.png" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-9.9375</longitude>
+      <latitude>12.9917</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-9.9375,12.9917,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Messier 74</name>
+    <description><![CDATA[<a href="more/M74.html" class="moreinfo"><img src="images/M74_Herschel-SPIRE-250_hi.png" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>-155.8258</longitude>
+      <latitude>15.7836</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>-155.8258,15.7836,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Whirlpool Galaxy</name>
+    <description><![CDATA[<a href="more/M51.html" class="moreinfo"><img src="images/M51_Herschel-PACS_hi.jpeg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>22.468</longitude>
+      <latitude>47.1947</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>22.468,47.1947,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Whirlpool Galaxy</name>
+    <description><![CDATA[<a href="more/M51.html" class="moreinfo"><img src="images/M51_Herschel-PACS_hi.jpeg" width="150" height="150"/></a><div style="font-size:80%">Click on the image for more info</div>]]></description>
+    <LookAt>
+      <longitude>22.468</longitude>
+      <latitude>47.1947</latitude>
+      <altitude>0</altitude>
+      <range>500000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <styleUrl>#extra-galactic</styleUrl>
+    <Point>
+      <coordinates>22.468,47.1947,0</coordinates>
+    </Point>
+  </Placemark>
+
+</Document>
+</kml>

@@ -1,0 +1,381 @@
+//$(document).ready(function () {
+function setupHerschel(){    
+    $('#kiosk').disableTextSelect();
+    //chromo.buildHelp(true);
+    //animate options panel
+    //process overlays
+    //chromo.processOverlays();
+
+
+    //*******************
+    //re-register keys
+    //*******************
+    chromo.reregisterKey('.',function(){
+	$(this.body+" h1").toggle();
+	$(this.body+" h2").toggle();
+	$(this.body+" .chromo_message").hide();
+	$(this.body+" .chromo_layerswitcher").toggle();
+	$(this.body+" .chromo_helplink").toggle();
+	$(this.body+" .chromo_help").hide();
+	$(this.body+" .chromo_info").hide();
+	$(this.body+" .chromo_pingroups_list").toggle();
+	$(this.body+" .chromo_title").toggle();
+	$(this.body+" #kiosk").toggle();
+	$(this.body+" #overlay").toggle();
+    });
+
+    chromo.reregisterKey(45,function(){ // user presses the - (45 for Firefox)
+	this.changeMagnification(-1);
+    });
+    chromo.reregisterKey('c',function(){
+	chromo.toggleAnnotationsByName('c');
+	chromo.checkTiles(true)
+	console.log('toggled labels');
+	if($('#kiosk #options #option-const #on-off').hasClass("off")){
+	    $('#kiosk #options #option-const #on-off').removeClass("off").addClass("on");
+        }else if($('#kiosk #options #option-const #on-off').hasClass("on")){
+	    $('#kiosk #options #option-const #on-off').removeClass("on").addClass("off");};
+    },'toggle constellation labels')
+
+    chromo.reregisterKey('l',function(){
+	chromo.toggleAnnotationsByName('l');
+	chromo.checkTiles(true)
+	console.log('toggled planck');
+	if($('#kiosk #options #option-labels #on-off').hasClass("off")){
+	    $('#kiosk #options #option-labels #on-off').removeClass("off").addClass("on");
+        }else if($('#kiosk #options #option-labels #on-off').hasClass("on")){
+	    $('#kiosk #options #option-labels #on-off').removeClass("on").addClass("off");};
+    },'toggle planck labels')
+
+
+    //turn off annotations (normal labels already turned off)
+    for(var i=0 ; i < chromo.annotations.length ; i++){
+	var character = chromo.annotations[i].key;
+	if (character != 'l') chromo.toggleAnnotationsByName(character)
+	//console.log('turn off annotation ',character);
+    };
+
+    //*****************************
+    //make options buttons in kiosk
+    //*****************************
+
+    /*if (chromo.annotations.length >2){
+	var currheight=Math.round(parseInt($(chromo.body+' #kiosk').height()));
+	console.log(currheight);
+	//add overlay header 
+	$(chromo.body+' .column').append('<h4>Overlay</h4>');
+	var kioskheight = currheight + 20;
+        for (var i=0 ; i < chromo.annotations.length ; i++){
+	    //add annotation buttons
+	    if (chromo.annotations[i].key != 'l' && chromo.annotations[i].key != 'p'){
+		divclass="option";
+		divid="option-"+chromo.annotations[i].name;
+		var key=chromo.annotations[i].key
+		$(chromo.body+' .column').append('<div id="'+divid+'" class="'+divclass+'">');
+		$(chromo.body+' .column #'+divid).append('<div id="on-off" class="off"></div>');
+		$(chromo.body+' .column #'+divid).append('<div class="label">'+chromo.annotations[i].title+'</div>');
+		kioskheight = kioskheight + 40;
+		chromo.annotations[i].id=divid
+		$(chromo.body+' .column #'+divid).click(function(){
+		    var srchid=this.id
+		    //console.log('looking for:',srchid);
+		    for (var j=0 ; j < chromo.annotations.length ; j++){
+			//console.log('found:',fndid);
+			if (chromo.annotations[j].id == this.id){
+			    //console.log(this,this.id);
+			    chromo.simulateKeyPress(chromo.annotations[j].key);
+			};
+		    };
+		});
+	    };
+	}
+	//add opacity changer
+	
+	$(chromo.body+' #kiosk').css({height:kioskheight+"px"});
+	$(chromo.body+' #kiosk-overlay').css({height:kioskheight+"px"});
+	$(chromo.body+' #kiosk #menu-title').css({bottom:kioskheight/2+"px"});
+    }*/
+
+    //********************************
+    //make options buttons in overlay
+    //********************************
+    chromo.nann=0;
+    for (var i=0 ; i < chromo.annotations.length ; i++){
+	if (!isOverlay(chromo.annotations[i].key)) chromo.nann++ ;
+    };
+    chromo.nov = chromo.annotations.length - chromo.nann;
+    //chromo.nov = 8;
+    if (chromo.nov >0){
+
+
+	//set up columns
+	var colmax=3;
+	if (chromo.nov > colmax) ncol=2;
+	console.log(chromo.nov/colmax,Math.ceil(chromo.nov/colmax));
+	var ncol=Math.ceil(chromo.nov/colmax);
+	var colwid = 150;
+	var ovwid=Math.round(parseInt($(chromo.body+' #overlay').width()));
+	ovwid = ovwid + ncol*(colwid+20)
+	opwid = ncol*(colwid+20)
+	$(chromo.body+' #overlay').css({
+	    width:ovwid+'px',
+	    left:-(ovwid+40)+'px',
+	    opacity:1.0
+	});
+	$(chromo.body+' #overlay #options').css({width:opwid+'px'});
+	for (var c=0;c<ncol;c++){
+	    $(chromo.body+' #overlay #options').append('<div class="column" id="col'+(c+1)+'" style="top:0px;left:'+(260+(c)*colwid)+'px;width:'+colwid+'px;"></div>');
+	};
+
+	var ovx=0;
+	var colid='col1'
+        for (var i=0 ; i < chromo.annotations.length ; i++){
+	    //add annotation buttons
+	    if (isOverlay(chromo.annotations[i].key)){
+		ovx++;
+		colid='col'+Math.ceil(ovx/colmax);
+		console.log(ovx,colid);
+		//if (ovx > colmax) colid='col2';
+		divclass="option";
+		divid="option-"+chromo.annotations[i].name;
+		infoid="info-"+chromo.annotations[i].name;
+		chromo.annotations[i].divid=divid;
+		chromo.annotations[i].infoid=infoid;
+		$(chromo.body+' #overlay #'+colid).append('<div id="'+divid+'" class="'+divclass+'">');
+		$(chromo.body+' #overlay #'+colid+' #'+divid).append('<div id="on-off" class="off"></div>');
+		$(chromo.body+' #overlay #'+colid+' #'+divid).append('<div class="label">'+chromo.annotations[i].title+'</div>');
+		$(chromo.body+' #overlay #'+colid+' #'+divid+' .label').disableTextSelect();
+		//sort out what happens on clicking the button
+		$(chromo.body+' #overlay #'+colid+' #'+divid).click(function(){
+		    //var srchid=$(chromo.body+' #overlay #'+colid+' #'+divid).id;
+		    var srchid=this.id;
+		    console.log('looking for:',srchid);
+		    for (var j=0 ; j < chromo.annotations.length ; j++){
+			if (chromo.annotations[j].divid == srchid){
+			    chromo.simulateKeyPress(chromo.annotations[j].key);
+			    if ($(chromo.body+' #overlay #'+srchid+' #on-off').hasClass("off")){
+				$(chromo.body+' #overlay #'+srchid+ ' #on-off').removeClass("off").addClass("on");
+			    }else{
+				$(chromo.body+' #overlay #'+srchid+' #on-off').removeClass("on").addClass("off");
+			    };
+			};
+		    };
+		});
+		
+		//add info button
+		$(chromo.body+' #overlay #'+colid).append('<div class="info" id="'+infoid+'"></div>');
+		$(chromo.body+' #overlay #'+colid+" #"+infoid).click(function(){
+		    var srchid='more'+this.id;
+		    console.log('toggling',srchid,$(chromo.body+' #'+srchid).css('display'));
+		    if ($(chromo.body+' #'+srchid).css('display')=='none'){
+			$(chromo.body+' #'+srchid).show();
+		    }else{
+			$(chromo.body+' #'+srchid).hide();
+		    }
+		});
+
+	    };
+	};
+	$(chromo.body+' .overlay_info').each(function(){
+	    srchid=this.id;
+	    console.log(srchid);
+	    $(this).prepend(chromo.createClose());
+	    //$(this.body+" .chromo_close").bind('click',{id:'overlay_info'}, jQuery.proxy( this, "hide" ) );
+	    $(chromo.body+' #'+srchid+' .chromo_close').on('click',{id:srchid},function(event){$(chromo.body+' #'+event.data.id).hide();});
+	    if (chromo.wide < $(this).width()) $(this).css("width",w-50+"px");
+	    console.log(this,$(this).width());
+	    chromo.centreDiv("#"+srchid)
+
+	});
+	//add opacity changer
+	toggleOverlay();
+	var ovheight=Math.round(parseInt($(chromo.body+' #overlay').height()));
+	colheight=40+(ncol+1)*40;
+	if (ovheight < colheight){
+	    $(chromo.body+' #overlay').css({height:colheight+"px"});
+	    titbot=Math.round(parseInt($(chromo.body+' #overlay #menu-title').css('bottom')));
+	    titbot=titbot+(colheight-ovheight)/2;
+	    $(chromo.body+' #overlay #menu-title').css({bottom:titbot+"px"});
+	}
+    }
+    
+    function isOverlay(key){
+	//true if key is 'c' or 'p', false otherwise
+	if (key == 'c' || key == 'l') return false;
+	return true;
+    }
+    //set mouse click events options
+
+    function showOverlayInfo(infoid){
+	$(chromo.body+' #'+infoid).show();
+	console.log('showing info',infoid);
+    }
+    function hideOverlayInfo(infoid){
+	$(chromo.body+' #'+infoid).hide();
+	console.log('hiding info',infoid);
+    }
+
+    $('#kiosk .minmax').click(function(){
+	toggleOptions();
+    });
+    $('#kiosk #menu-title').click(function(){
+	toggleOptions();
+    });
+    
+    $('#kiosk #option-overlay').click(function(){
+	toggleOverlay();
+    });
+    
+    $('#overlay .minmax').click(function(){
+	toggleOverlay();
+    });
+    
+    function toggleOptions(force){
+	if (!force) force='none'
+	console.log(force);
+        if($('#kiosk .minmax').hasClass("max") || force=='min'){
+	    //minimize
+	    $('#kiosk .minmax').removeClass("max").addClass("min");
+	    $('#kiosk').animate({
+                left:'-190px',
+		opacity:0.6,
+            });
+	    toggleOverlay('off');
+        }else if($('#kiosk .minmax').hasClass("min") || force=='max'){
+	    //maximize
+	    $('#kiosk .minmax').removeClass("min").addClass("max");
+	    $('#kiosk').animate({
+                left:'-15px',
+		opacity:1.0,
+	    });
+	    if($('#overlay .minmax').hasClass("max")) toggleOverlay('max')
+	    if($('#overlay .minmax').hasClass("min")) toggleOverlay('min')
+        }
+    }
+
+    function toggleOverlay(force){
+	if (!force) {
+	    if($('#overlay .minmax').hasClass("max")) force='min'
+	    if($('#overlay .minmax').hasClass("min")) force='max'
+	}
+        if(force=='min'){
+	    //minimize
+	    $('#overlay .minmax').removeClass("max").addClass("min");
+	    $('#overlay').animate({
+                left:-(ovwid-$('#kiosk').width()-50)+'px',
+            });
+	    $('#kiosk .option .arrow-left').addClass("arrow-right").removeClass("arrow-left");
+        }else if(force=='max'){
+	    //maximize
+	    $('#overlay .minmax').removeClass("min").addClass("max");
+	    $('#overlay').animate({
+                left:'-15px',
+	    }); 
+	    $('#kiosk .option .arrow-right').addClass("arrow-left").removeClass("arrow-right");
+	}else if(force=='off'){
+	    $('#overlay').animate({
+                left:-(ovwid+40)+'px',
+            });
+	};
+    }
+
+    //toggle constellation labels on click
+    $('#kiosk #options #option-const').click(function(){
+        chromo.simulateKeyPress('c');
+    });
+
+    //toggle Planck labels on click
+    $('#kiosk #options #option-labels').click(function(){
+	chromo.simulateKeyPress('l');
+    });
+
+    //toggle Herschel results on click
+    $('#kiosk #options #option-kml').click(function(){
+	chromo.simulateKeyPress('#');
+    });
+
+    //toggle coordinates on click
+    $('#kiosk #options .option-coord').click(function(){
+	if($('#kiosk #options .option-coord #on-off').hasClass("gal")){
+	    $('#kiosk #options .option-coord #on-off').removeClass("gal").addClass("eq");
+	    $('#kiosk #options .option-coord .label').html("Equatorial");
+	    console.log('clicked coord')
+	    console.log($('#kiosk #options .option-coord .label').html())
+	    chromo.switchCoordinateSystem('A')
+	}else if($('#kiosk #options .option-coord #on-off').hasClass("eq")){
+	    $('#kiosk #options .option-coord #on-off').removeClass("eq").addClass("gal");
+	    $('#kiosk #options .option-coord .label').html("Galactic");
+	    chromo.switchCoordinateSystem('G')
+	}
+    });
+
+    //*********************************************
+    /*  PLANCK RESULTS (CURRENTLY UNAVAILABLE)  */
+    //*********************************************
+
+    //toggle Planck results on click (CURRENTLY UNABAILABLE)
+    $('#kiosk #options .option-kml').click(function(){
+	toggleResults();
+    });
+
+    //toggle Planck results on click (CURRENTLY UNAVAILABLE)
+    function toggleResults(){
+        if($('#kiosk #options #option-kml #on-off').hasClass('off')){
+	    //kmlUrl='kml_files/results-web.kml';
+	    //removePins();
+	    //chromo.readKML(kmlUrl);
+	    $('#kiosk #options #option-kml #on-off').removeClass("off").addClass("on");
+	    //$('.pinholder').css({display:'block'});
+	    //$('.pinholder').css({opacity:0.5});
+	    $('.pinholder').show();
+        }else if($('#kiosk #options #option-kml #on-off').hasClass('on')){
+	    //kmlUrl='';
+	    //removePins();
+	    //chromo.readKML(kmlUrl);
+	    $('.pinholder').hide();
+	    $('#kiosk #options #option-kml #on-off').removeClass("on").addClass("off");
+        }
+    }
+    
+    //set '#' key to toggle Herschel results
+    chromo.registerKey('#',function(){
+	//alert('r')
+	toggleResults();
+    },'toggle Herschel results')
+
+    //remove pins from Chromo.
+    function removePins(){
+        //for(var i = 0; i <= chromo.pins.length;i++){
+        //    chromo.removePin(i);
+        //}
+        //$('#body-holder-kml').remove();
+	$('.pinholder').html("");
+	chromo.kmls=[];
+	chromo.pins=[];
+    }
+    
+    /*$(".pin").live('click',function(){
+	$(".moreinfo").fancybox({
+		'width'			: 1000,
+		'height'		: 600,
+		'autoScale'		: false,
+       		'transitionIn'		: 'fade',
+       		'transitionOut'		: 'fade',
+       		'type'			: 'iframe',
+		'autoDimensions'	: 'false'	
+       	});
+	//$(".moreinfo").trigger('click');
+	console.log('hello');
+	return false;
+    });*/
+
+    //set up help and intro
+    //chromo.phrasebook.helpdesc = "Help text";
+    chromo.buildHelp(true);
+    chromo.buildLinks(true);
+
+    //Set up fancybox stuff
+
+
+//});
+}

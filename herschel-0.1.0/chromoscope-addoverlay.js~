@@ -1,0 +1,15 @@
+(function ($) {
+
+	function init(chromo) {
+
+	    chromo.addOverlay = function(input){
+		console.log('add overlay')
+	    }
+	}
+	    
+	$.chromoscope.plugins.push({
+		init: init,
+		name: 'addOverlay',
+		version: '1.0'
+	});
+})(jQuery);
