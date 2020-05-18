@@ -45,12 +45,12 @@
 		//	overwrite (boolean) = Do we overwrite any previously loaded Placemarkers?
 		//	duration (number) = Number of milliseconds before reloading the KML
 		//	callback (function) = A function to call after this
-		chromo.readKML = function(file){
+		chromo.readKML = function(file,allowcross=false){
 			//console.log("Time to start of readKML:" + (new Date() - this.start) + "ms");
 
 			if(typeof file=="string"){
 				// Relative link shouldn't have a protocol
-				if(file.indexOf('://') < 0){
+				if((file.indexOf('://') < 0)|(allowcross)){
 
 					var duration = 0;
 					var overwrite = false;
@@ -362,7 +362,7 @@
 		}
 		
 		function range2degrees(r){
-			//r = R*(k*sin(ß/2) - cos(ß/2) + 1)
+			//r = R*(k*sin(ï¿½/2) - cos(ï¿½/2) + 1)
 			// Return field of view in degrees
 			return 180*Math.acos(1 - r/6378000)/Math.PI;
 		}
