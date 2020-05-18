@@ -2,31 +2,31 @@
 <head>
 	<title>Chromoscope - View the Universe in different wavelengths</title>
 	<link rel="icon" type="image/vnd.microsoft.icon" href="http://www.chromoscope.net/favicon.ico" />
-	<link rel="stylesheet" href="herschel-0.1.0/herschel.css" type="text/css" />
+	<link rel="stylesheet" href="https://chrisnorth.github.io/Herscheloscope/herschel-0.1.0/herschel.css" type="text/css" />
 	<!--[if IE 6]><link rel="stylesheet" href="1.4.3/style-ie.css" type="text/css" /><![endif]-->
-	<script src="1.4.3/jquery-1.7.1.min.js"></script>
-	<script src="1.4.3/jquery.mousewheel.min.js"></script>
-	<script src="1.4.3/chromoscope.js"></script>
-	<script src="1.4.3/chromoscope-lookup.js"></script>
-	<script src="1.4.3/chromoscope-kml.js"></script>
-	<script src="1.4.3/chromoscope-contextmenu.js"></script>
+	<script src="https://chrisnorth.github.io/Herscheloscope/1.4.3/jquery-1.7.1.min.js"></script>
+	<script src="https://chrisnorth.github.io/Herscheloscope/1.4.3/jquery.mousewheel.min.js"></script>
+	<script src="https://chrisnorth.github.io/Herscheloscope/1.4.3/chromoscope.js"></script>
+	<script src="https://chrisnorth.github.io/Herscheloscope/1.4.3/chromoscope-lookup.js"></script>
+	<script src="https://chrisnorth.github.io/Herscheloscope/1.4.3/chromoscope-kml.js"></script>
+	<script src="https://chrisnorth.github.io/Herscheloscope/1.4.3/chromoscope-contextmenu.js"></script>
 	<!--<script src="1.4.3/chromoscope-coordswitcher.js"></script>-->
-	<script type="text/javascript" src="herschel-0.1.0/chromoscope-reregisterkey.js"></script>
-	<script type="text/javascript" src="1.4.3/ui/jquery.ui.core.min.js"></script>
-	<script type="text/javascript" src="1.4.3/ui/jquery.ui.widget.min.js"></script>
-	<script type="text/javascript" src="1.4.3/ui/jquery.ui.mouse.min.js"></script>
-	<script type="text/javascript" src="1.4.3/ui/jquery.ui.sortable.min.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="fancybox2/jquery.fancybox.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="fancybox2/jquery.fancybox.css" media="screen" />
-	<script type="text/javascript" src="herschel-0.1.0/herschel.js"></script>
+	<script type="text/javascript" src="https://chrisnorth.github.io/Herscheloscope/herschel-0.1.0/chromoscope-reregisterkey.js"></script>
+	<script type="text/javascript" src="https://chrisnorth.github.io/Herscheloscope/1.4.3/ui/jquery.ui.core.min.js"></script>
+	<script type="text/javascript" src="https://chrisnorth.github.io/Herscheloscope/1.4.3/ui/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="https://chrisnorth.github.io/Herscheloscope/1.4.3/ui/jquery.ui.mouse.min.js"></script>
+	<script type="text/javascript" src="https://chrisnorth.github.io/Herscheloscope/1.4.3/ui/jquery.ui.sortable.min.js"></script>
+	<script type="text/javascript" src="https://chrisnorth.github.io/Herscheloscope/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="https://chrisnorth.github.io/Herscheloscope/fancybox2/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://chrisnorth.github.io/Herscheloscope/fancybox2/jquery.fancybox.css" media="screen" />
+	<script type="text/javascript" src="https://chrisnorth.github.io/Herscheloscope/herschel-0.1.0/herschel.js"></script>
 	<script type="text/javascript">
 	<!--
-  	var kmlUrl = 'kml_files/results.kml';
+  	var kmlUrl = 'https://chrisnorth.github.io/Herscheloscope/kml_files/results.kml';
 	
 	// Set up the Chromoscope
 	$(document).ready(function(){
-		chromo = $.chromoscope({showintro:false,showshare:false,showabout:false,showlangs:false,showcontext:false,kml:'kml_files/results-full.kml'});
+		chromo = $.chromoscope({showintro:false,showshare:false,showabout:false,showlangs:false,showcontext:false,kml:'https://chrisnorth.github.io/Herscheloscope/kml_files/results-full.kml'});
 		// The spectral bands should be in order
 		chromo.addWavelength({useasdefault:false,key:'g',name:'gamma',tiles:'https://s3.amazonaws.com/Chromoscope/Fermi-tiles/',ext:'jpg',title:'gamma',attribution:'<a href="http://fermi.gsfc.nasa.gov/">Fermi</a>'});
 		chromo.addWavelength({useasdefault:false,key:'x',name:'xray',tiles:'https://s3.amazonaws.com/Chromoscope/RASS-tiles/',ext:'jpg',title:'xray',attribution:'<a href="http://www.mpe.mpg.de/xray/wave/rosat/index.php">ROSAT</a>'});
@@ -41,7 +41,7 @@
 
 		// Load the map
 		chromo.load(setupHerschel);
-		chromo.readKML('kml_files/results-full.kml');
+		chromo.readKML('https://chrisnorth.github.io/Herscheloscope/kml_files/results-full.kml');
 		$(".pinholder").css({display:'block'});
 		//chromo.toggleResults();
 		//rebuild the Help text

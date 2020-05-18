@@ -4,7 +4,7 @@
  <Style id='default'>
 	<IconStyle>
 	<Icon>
-	<href>pin_default.png</href>
+	<href>https://chrisnorth.github.io/Herscheloscope/pin_default.png</href>
 	</Icon>
 	</IconStyle>
 	<LabelStyle>
@@ -14,7 +14,7 @@
  <Style id='solar-system'>
 	<IconStyle>
 	<Icon>
-	<href>pin_ss.png</href>
+	<href>https://chrisnorth.github.io/Herscheloscope/pin_ss.png</href>
 	</Icon>
 	</IconStyle>
 	<LabelStyle>
@@ -24,7 +24,7 @@
  <Style id='galactic'>
 	<IconStyle>
 	<Icon>
-	<href>pin_galactic.png</href>
+	<href>https://chrisnorth.github.io/Herscheloscope/pin_galactic.png</href>
 	</Icon>
 	</IconStyle>
 	<LabelStyle>
@@ -34,7 +34,7 @@
  <Style id='extra-galactic'>
 	<IconStyle>
 	<Icon>
-	<href>pin_extraGalactic.png</href>
+	<href>https://chrisnorth.github.io/Herscheloscope/pin_extraGalactic.png</href>
 	</Icon>
 	</IconStyle>
 	<LabelStyle>
